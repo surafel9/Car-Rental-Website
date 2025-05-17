@@ -6,9 +6,9 @@ A simple car rental website with multiple service packages.
 
 - **Landing Page**: Welcome and overview of services  
 - **Packages / Services**:  
-  - Personal Website  
-  - Business Website  
-  - Wedding Page  
+  - Personal Package
+  - Business Package
+  - Wedding Package  
 - **Testimonial**: Customer feedback section  
 - **Help**: Support and assistance information  
 - **FAQ**: Frequently Asked Questions  
