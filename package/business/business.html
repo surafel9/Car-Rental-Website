@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Cars</title>
+<style>
+            @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
+
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            font-family: 'Mona Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-family: 'Mona Sans', sans-serif;
+            text-transform: uppercase;
+        }
+
+        a:visited,
+        a:active {
+            color: #000000;
+        }
+
+        a:hover {
+            color: #f73505;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(8, auto); 
+            align-items: center;
+            justify-content: space-between; 
+            gap: 20px; 
+            padding: 10px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .heading h1 {
+            color: #f73505;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2.5em;
+        }
+
+        .heading h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .car-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px 10%;
+            background-color: #f5f5f5;
+        }
+
+        .car-card {
+            background-color: #fff;
+            box-shadow: 0 2px 5px #f73505;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            flex: 1 1 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .car-card button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #f73505;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .car-card button:hover {
+            background-color: #c42e00;
+        }
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../../index.html"><img src="../../images/logo.png" alt="Logo" /></a>
+    <a href="../../index.html"><strong>Home</strong></a>
+    <a href="../../package.html"><strong>Package</strong></a>
+    <a href="../../testimonial.html"><strong>Testimonials</strong></a>
+    <a href="../../about.html"><strong>About</strong></a>
+    <a href="../../help.html"><strong>Help</strong></a>
+    <a href="../../faq.html"><strong>FAQ</strong></a>
+  </div>
+
+  <div class="heading">
+    <h1>Business Package</h1>
+    <h2>Drive Your Business Forward!</h2>
+  </div>
+
+  <div class="car-grid">
+    <div class="car-card">
+      <img src="../../images/business/RED HILUX.png"alt="Toyota Hilux" />
+      <h4>Fuel</h4>
+      <strong>Toyota Hilux</strong><br />
+      <strong>4500 BIRR/DAY</strong><br />
+      <a href="redhilux.html"><button>See More</button></a>
+    </div>
+
+    <div class="car-card">
+      <img src="../../images/business/d329ea3c6d046735095cfff6bc79dd20-removebg-preview.png" alt="Toyota Costar" />
+      <h4>Fuel</h4>
+      <strong>Toyota Costar</strong><br />
+      <strong>25000 BIRR/DAY</strong><br />
+      <a href="busincar.html"><button>See More</button></a>
+    </div>
+
+    <div class="car-card">
+      <img src="../../images/business/v8.png" alt="Toyota Prado" />
+      <h4>Hybrid</h4>
+      <strong>Toyota Prado</strong><br />
+      <strong>15000 BIRR/DAY</strong><br />
+      <a href="v8.html"><button>See More</button></a>
+    </div>
+
+    <div class="car-card">
+      <img src="../../images/business/landv8.png" alt="Toyota Land Cruiser" />
+      <h4>Fuel</h4>
+      <strong>Toyota Land Cruiser</strong><br />
+      <strong>21000 BIRR/DAY</strong><br />
+      <a href="pickup.html"><button>See More</button></a>
+    </div>
+
+    <div class="car-card">
+      <img src="../../images/business/WHITERANGEROVER.png" alt="Range Rover" />
+      <h4>Electric</h4>
+      <strong>Range Rover</strong><br />
+      <strong>30000 BIRR/DAY</strong><br />
+      <a href="rangerover.html"><button>See More</button></a>
+    </div>
+
+    <div class="car-card">
+      <img src="../../images/business/ford.png" alt="Toyota V8" />
+      <h4>Fuel</h4>
+      <strong>Ford</strong><br />
+      <strong>33000 BIRR/DAY</strong><br />
+      <a href="ford.html"><button>See More</button></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
+
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            font-family: 'Mona Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-family: 'Mona Sans', sans-serif;
+            text-transform: uppercase;
+        }
+        a:visited {
+            color: #000000;
+        }
+        a:active {
+            color: #000000;
+        }
+        a:hover {
+            color: #f73505;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: repeat(8, auto); 
+            align-items: center;
+            justify-content: space-between; 
+            gap: 20px; 
+            padding: 10px;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        h1 {
+            color: #f73505;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .testimonial-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex; /* Flex-box */
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .testimonial {
+            background-color: #f5f5f5;
+            text-align: center;
+            flex: 1;
+            padding: 20px;
+            box-shadow: 0 2px 5px #f73505;
+        }
+
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .testimonial h3 {
+            color: goldenrod;
+        }
+
+        .testimonial i {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="package.html"><strong>Package</strong></a>
+        <a href="testimonial.html"><strong>Testimonials</strong></a>
+        <a href="about.html"><strong>About</strong></a>
+        <a href="help.html"><strong>Help</strong></a>
+        <a href="faq.html"><strong>FAQ</strong></a>
+    </div>
+    
+    <div>
+        <h1>Testimonials</h1>
+        <h2>Whats Our Customer Say</h2>
+        
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="images/testimonial1.png" alt="Customer Avatar"> <br>
+                <b>Hanna</b><br>
+                <h3>★★★★★</h3>
+                <i>"Great experience! The car was clean and well-maintained. Booking was super easy!"</i>
+            </div>
+            <div class="testimonial">
+                <img src="images/Testimonial2.png" alt="Customer Avatar"> <br>
+                <b>Dawit</b><br>
+                <h3>★★★★★</h3>
+                <i>"Affordable prices and friendly staff. Will definitely rent again!"</i>
+            </div>
+            <div class="testimonial">
+                <img src="images/testimonial1.png" alt="Customer Avatar"> <br>
+                <b>Lidiya</b>
+                <h3>★★★★★</h3>
+                <i>"Smooth process from start to finish. Highly recommend this service!"</i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

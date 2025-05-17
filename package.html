@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
+
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            font-family: 'Mona Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-family: 'Mona Sans', sans-serif;
+            text-transform: uppercase;
+        }
+
+        a:visited, a:active {
+            color: #000000;
+        }
+
+        a:hover {
+            color: #f73505;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(8, auto); 
+            align-items: center;
+            justify-content: space-between; 
+            gap: 20px; 
+            padding: 10px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            color: #f73505;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .package-container {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .package {
+            background-color: #fff;
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px #f73505;
+            max-width: 30%;
+        }
+
+        .package img {
+            width: 100%;
+            max-width: 300px;
+            height: 210px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .package img:hover {
+            transform: scale(1.05);
+        }
+
+        .package a {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="package.html"><strong>Package</strong></a>
+        <a href="testimonial.html"><strong>Testimonials</strong></a>
+        <a href="about.html"><strong>About</strong></a>
+        <a href="help.html"><strong>Help</strong></a>
+        <a href="faq.html"><strong>FAQ</strong></a>
+    </div>
+
+    <div class="heading">
+        <h1>Choose the perfect package <br>for your needs!</h1>
+    </div>
+
+    <div class="package-container">
+        <div class="package">
+            <a href="package/personal/personal.html">
+                <img src="./images/personal/byd.png" alt="Personal Package">
+            </a>
+            <a href="package/personal/personal.html"><strong>Personal Package</strong></a>
+        </div>
+        <div class="package">
+            <a href="package/business/business.html">
+                <img src="./images/business/WHITERANGEROVER.png" alt="Business Package">
+            </a>
+            <a href="package/business/business.html"><strong>Business Package</strong></a>
+        </div>
+        <div class="package">
+            <a href="package/wedding/wedding.html">
+                <img style="width: 500px;" src="./images/wedding/longlimo.png" alt="Wedding Package">
+            </a>
+            <a href="package/wedding/wedding.html"><strong>Wedding Package</strong></a>
+        </div>
+    </div>
+</body>
+</html>

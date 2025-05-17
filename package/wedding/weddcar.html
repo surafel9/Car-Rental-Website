@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            font-family: 'Mona Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-family: 'Mona Sans', sans-serif;
+            text-transform: uppercase;
+        }
+        a:visited, a:active {
+            color: #000000;
+        }
+        a:hover {
+            color: #f73505;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: repeat(8, auto); 
+            align-items: center;
+            justify-content: space-between; 
+            gap: 20px; 
+            padding: 10px;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        h1 {
+            color: #f73505;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 30px;
+        }
+        .car-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .car-image img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .car-image img:hover {
+            transform: scale(2.05);
+        }
+        .car-details h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .car-details ul {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+        .car-details .price {
+            font-size: 2rem;
+            color: #006400;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <a href="../../index.html"><img src="../../images/logo.png" alt="Logo"></a>
+        <a href="../../index.html"><strong>Home</strong></a>
+        <a href="../../package.html"><strong>Package</strong></a>
+        <a href="../../testimonial.html"><strong>Testimonials</strong></a>
+        <a href="../../about.html"><strong>About</strong></a>
+        <a href="../../help.html"><strong>Help</strong></a>
+        <a href="../../FAQ.html"><strong>FAQ</strong></a>
+    </nav>
+
+    <main class="container">
+        <div class="car-image">
+            <img src="../../images/wedding/ChatGPT Image May 2, 2025, 02_26_19 AM.png" alt="Limo">
+        </div>
+        <div class="car-details">
+            <h1>Limo</h1>
+            <ul>
+                <li>Type: Luxury Wedding Limousine — stretch car with elegant white body and floral decorations</li>
+                <li>Seats: 8-10 passengers — perfect for bride, groom, and family</li>
+                <li>Features: Leather seats, ambient lights, sound system, mini-bar for a royal ride.</li>
+                <li>Decoration: Covered with red roses — customizable to match your wedding theme.</li>
+                <li>Package: 4-6 hours rental, chauffeur, free drinks, and decoration.</li>
+                <li>Comfort: Dual-zone AC, privacy partition — arrive relaxed and in style</li>
+                <li>Booking: Available by reservation — secure early for wedding season</li>
+                <li>Features: Air conditioning, Bluetooth, USB port, ABS brakes</li>
+            </ul>
+            <div class="price">Price: 100,000 BIRR per day</div>
+        </div>
+    </main>
+</body>
+</html>
