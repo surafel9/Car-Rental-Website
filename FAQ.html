@@ -4,102 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frequently Asked Questions</title>
-  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
-
-        body {
-            background-color: #f5f5f5;
-            color: #333333;
-            font-family: 'Mona Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            color: #000000;
-            text-decoration: none;
-            font-family: 'Mona Sans', sans-serif;
-            text-transform: uppercase;
-        }
-        a:visited {
-            color: #000000;
-        }
-        a:active {
-            color: #000000;
-        }
-        a:hover {
-            color: #f73505;
-        }
-        .header {
-            display: grid;
-            grid-template-columns: repeat(8, auto); 
-            align-items: center;
-            justify-content: space-between; 
-            gap: 20px; 
-            padding: 10px;
-        }
-        .header img {
-            width: 50px;
-            height: 50px;
-        }
-    h1 {
-      color: #f73505;
-      font-size: 2rem;
-      margin: 40px 0 10px 0;
-      text-align: center;
-    }
-    .faq-intro {
-      font-size: 1.1rem;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-    .faq-list {
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    details {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 12px 18px;
-      background-color: #ffffff;
-      font-size: 1rem;
-      transition: box-shadow 0.2s;
-    }
-    details summary {
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      font-size: 1.05rem;
-    }
-    details[open] {
-      border-color: #f73505;
-    }
-    details:hover summary {
-      color: #f73505;
-    }
-    details p {
-      margin: 10px 0 0;
-      font-size: 0.98rem;
-    }
-    @media (max-width: 700px) {
-      .faq-list {
-        max-width: 100%;
-        padding: 0 4vw;
-      }
-      .header {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 8px;
-        padding: 4px;
-      }
-      .header img {
-        width: 32px;
-        height: 32px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="header">
@@ -111,7 +16,7 @@
     <a href="help.html"><strong>Help</strong></a>
     <a href="faq.html"><strong>FAQ</strong></a>
   </nav>
-  <h1>Frequently Asked Questions</h1>
+  <h1 class="faq-title">Frequently Asked Questions</h1>
   <div class="faq-intro">
     Find answers to the most common questions about our car rental services
   </div>

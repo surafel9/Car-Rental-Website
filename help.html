@@ -1,153 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f5f5;
-      color: #333333;
-      font-family: 'Mona Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    a {
-      color: #000000;
-      text-decoration: none;
-      font-family: 'Mona Sans', sans-serif;
-      text-transform: uppercase;
-    }
-    a:visited {
-      color: #000000;
-    }
-    a:active {
-      color: #000000;
-    }
-    a:hover {
-      color: #f73505;
-    }
-    .header {
-      display: grid;
-      grid-template-columns: repeat(8, auto); 
-      align-items: center;
-      justify-content: space-between; 
-      gap: 20px; 
-      padding: 10px;
-    }
-    .header img {
-      width: 50px;
-      height: 50px;
-    }
-    .main-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .contact-info h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    .contact-info p {
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-    .contact-methods {
-      margin-top: 30px;
-    }
-    .contact-form {
-      background-color: rgba(234, 241, 234, 0.16);
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px #f73505;
-    }
-    .contact-form h3 {
-      margin-top: 0;
-    }
-    form {
-      display: grid;
-      gap: 20px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-family: 'Mona Sans', sans-serif;
-    }
-    textarea {
-      height: 150px;
-      resize: none;
-    }
-    button {
-      background-color: rgba(218, 25, 25, 0.573);
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: 'Mona Sans', sans-serif;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    button:hover {
-      background-color: #e03000;
-    }
-    ul {
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .contact-card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-    }
-    .contact-card i {
-      font-size: 24px;
-      margin-right: 15px;
-      color: #f73505;
-    }
-    .contact-card-content h4 {
-      margin: 0 0 5px 0;
-    }
-    .contact-card-content p {
-      margin: 0;
-      color: #666;
-    }
-    .social-icons {
-      display: flex;
-      gap: 15px;
-      margin-top: 15px;
-    }
-    .social-icons a { /*Decendant Selector*/
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      background-color: #f73505;
-      color: white;
-      border-radius: 50%;
-      font-size: 20px;
-    }
-    .social-icons a:hover { /*descendant pseudo-class selector*/
-      background-color: #e03000;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
   <title>Help - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <div class="header">
@@ -160,31 +17,31 @@
     <a href="faq.html"><strong>FAQ</strong></a>
   </div>
 
-  <div class="main-container">
-    <div class="contact-info">
-      <h3 style="color: #f73505;">HELP</h3>
-      <h1>Need Help? We're Here for You!</h1>
-      <p>Have question or need assistance? Our team is here to help you find the perfect car for your adventure</p>
+  <div class="help-main-container">
+    <div class="help-contact-info">
+      <h3 class="help-title">HELP</h3>
+      <h1 class="help-heading">Need Help? We're Here for You!</h1>
+      <p class="help-desc">Have question or need assistance? Our team is here to help you find the perfect car for your adventure</p>
       
-      <div class="contact-card">
+      <div class="help-contact-card">
         <i class="fas fa-envelope"></i>
-        <div class="contact-card-content">
+        <div class="help-contact-card-content">
           <h4>Email</h4>
           <p>selamrentalcar@gmail.com</p>
         </div>
       </div>
       
-      <div class="contact-card">
+      <div class="help-contact-card">
         <i class="fas fa-phone-alt"></i>
-        <div class="contact-card-content">
+        <div class="help-contact-card-content">
           <h4>Phone</h4>
           <p>0911452927</p>
         </div>
       </div>
       
-      <div class="contact-methods">
+      <div class="help-contact-methods">
         <h4>Reach out to us on:</h4>
-        <div class="social-icons">
+        <div class="help-social-icons">
           <a href="https://www.facebook.com/selamrentalmarketplace" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/selamrentalmarketplace" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://t.me/selamrentalmarketplace" target="_blank"><i class="fab fa-telegram-plane"></i></a>
@@ -192,8 +49,7 @@
       </div>
     </div>
     
-    <div class="contact-form">
-      <!-- <h3>Contact Form</h3> -->
+    <div class="help-contact-form">
       <form id="onsubmit">
         <label for="fullname">FULL NAME</label>
         <input type="text" id="fullname" placeholder="Abebe Selam" name="fullname" >
@@ -201,28 +57,13 @@
         <label for="email">EMAIL</label>
         <input type="email" id="email" placeholder="m@gmail.com" name="email" >
         
-        <label for="message" placeholder="">LEAVE US A MESSAGE</label>
+        <label for="message">LEAVE US A MESSAGE</label>
         <textarea id="message" name="message" required></textarea>
         
         <button type="submit">submit</button>
       </form>
     </div>
   </div>
-  <script>
-  let form = document.getElementById("onsubmit");
-
-  form.addEventListener("submit", function (e) {
-      e.preventDefault(); 
-
-  let name = document.getElementById("fullname").value;
-
-  if (name === "") {
-    alert("Name is required!");
-  } else {
-alert("Hello " + name + ", your message is submitted. We will contact you ASAP. Please check your email.");
-  }
-
-  });
-</script>
 </body>
+  <script src="main.js"></script>
 </html>

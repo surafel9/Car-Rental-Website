@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+    font-family: 'Mona Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Mona Sans', sans-serif;
+    text-transform: uppercase;
+}
+a:visited {
+    color: #000000;
+}
+a:active {
+    color: #000000;
+}
+a:hover {
+    color: #f73505;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(8, auto); 
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 10px;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Index (Home page) Css start here */
+.index-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+}
+.index-title {
+    font-size: 2em;
+}
+.index-main-title {
+    font-size: 50px;
+}
+.index-main-title span {
+    color: #f73505;
+}
+.index-main-content {
+    font-size: 1em;
+}
+.index-car-image {
+    width: 800px;
+    height: 500px;
+}
+.index-content div:last-child {
+    text-align: right;
+}
+
+/* Package Css start here */
+.package-heading h1 {
+    color: #f73505;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.package-container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    background-color: #fff;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px #f73505;
+    max-width: 30%;
+}
+
+.package-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package-card img:hover {
+    transform: scale(1.05);
+}
+
+.package-card a {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.package-wedding-img {
+    width: 500px !important;
+    max-width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* Testimonial CSS start here */
+.testimonial-title {
+    color: #f73505;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimonial-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #f5f5f5;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 2px 5px #f73505;
+    border-radius: 8px;
+    margin: 0 10px;
+    min-width: 220px;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-card h3 {
+    color: goldenrod;
+    margin: 10px 0 5px 0;
+}
+
+.testimonial-card i {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+}
+
+/* About Css start here */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 30px auto 0 auto;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-title {
+    color: #f73505;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.about-desc {
+    font-size: 0.98rem;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.about-more-link {
+    display: inline-block;
+    background-color: #f73505;
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.about-more-link:hover {
+    background-color: #b91c00;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+/* Help Css start here */
+.help-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-title {
+  color: #f73505;
+  margin-bottom: 0;
+}
+
+.help-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.help-desc {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.help-contact-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.help-contact-card i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #f73505;
+}
+
+.help-contact-card-content h4 {
+  margin: 0 0 5px 0;
+}
+
+.help-contact-card-content p {
+  margin: 0;
+  color: #666;
+}
+
+.help-contact-methods {
+  margin-top: 30px;
+}
+
+.help-social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.help-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f73505;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.help-social-icons a:hover {
+  background-color: #e03000;
+}
+
+.help-contact-form {
+  background-color: rgba(234, 241, 234, 0.16);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #f73505;
+}
+
+.help-contact-form form {
+  display: grid;
+  gap: 20px;
+}
+
+.help-contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.help-contact-form input,
+.help-contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Mona Sans', sans-serif;
+}
+
+.help-contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.help-contact-form button {
+  background-color: rgba(218, 25, 25, 0.573);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Mona Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.help-contact-form button:hover {
+  background-color: #e03000;
+}
+
+/* FAQ Page CSS */
+.faq-title {
+  color: #f73505;
+  font-size: 2rem;
+  margin: 40px 0 10px 0;
+  text-align: center;
+}
+
+.faq-intro {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.faq-list {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-list details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.faq-list details summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.05rem;
+}
+
+.faq-list details[open] {
+  border-color: #f73505;
+}
+
+.faq-list details:hover summary {
+  color: #f73505;
+}
+
+.faq-list details p {
+  margin: 10px 0 0;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 700px) {
+  .faq-list {
+    max-width: 100%;
+    padding: 0 4vw;
+  }
+}
+
+/* Business CSS here */
+.business-heading h1 {
+  color: #f73505;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+.business-heading h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.business-car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 10%;
+  background-color: #f5f5f5;
+}
+
+.business-car-card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #f73505;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.business-car-card:hover {
+  transform: translateY(-5px);
+}
+
+.business-car-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.business-car-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f73505;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.business-car-card button:hover {
+  background-color: #c42e00;
+}
+
+/* Personal CSS here */
+.personal-heading h1 {
+  color: #f73505;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+.personal-heading h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.personal-car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 10%;
+  background-color: #f5f5f5;
+}
+
+.personal-car-card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #f73505;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.personal-car-card:hover {
+  transform: translateY(-5px);
+}
+
+.personal-car-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.personal-car-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f73505;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.personal-car-card button:hover {
+  background-color: #c42e00;
+}
+
+/* Wedding CSS start here */
+.wedding-heading h1 {
+  color: #f73505;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+.wedding-heading h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.wedding-car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 10%;
+  background-color: #f5f5f5;
+}
+
+.wedding-car-card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #f73505;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.wedding-car-card:hover {
+  transform: translateY(-5px);
+}
+
+.wedding-car-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.wedding-car-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f73505;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.wedding-car-card button:hover {
+  background-color: #c42e00;
+}
+
+/* Car Description Style here  */
+.car-details-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+
+.car-details-page-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-details-page-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.car-details-page-image img:hover {
+    transform: scale(2.05);
+}
+
+.car-details-page-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f73505;
+    text-align: left;
+}
+
+.car-details-page-details ul {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.car-details-page-details .price {
+    font-size: 2rem;
+    color: #006400;
+    font-weight: bold;
+}
